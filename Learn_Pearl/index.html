@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Sidebar Menu Using HTML & CSS</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+	<link href="index.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="">
+
+    <!-- Linking the java Script file (app.js)-->
+    <script src="app.js"></script>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li>
+                <img src="images/pearl.png"  style=" border-radius: 10px; height: 100px; width: 100px; margin-left: 65px; margin-top:20px " alt="">
+            </li>
+			<li>
+				<a href="#">Introduction to Pearl</a>
+			</li>
+			<li>
+				<a href="#"> Pearl Loops</a>
+			</li>
+			<li>
+				<a href="#"> Pearl abstraction</a>
+			</li>
+			<li>
+				<a href="#"> Pearl encapsulation</a>
+			</li>
+			<li>
+				<a href="#"> Pearl inheritance</a>
+			</li>
+      <li>
+        <a href="index.html"><svg style="height: 40px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg><p> Back to Home</p></a>
+      </li>
+                  <!--Dark_Light_switch-->
+    <label class="ui-switch">
+        <input type="checkbox"onclick="Dark_Light_mode()" >
+        <div class="slider">
+          <div class="circle"></div>
+        </div>
+      </label>
+		</ul>
+	</nav>
+
+
+
+
+
+<div class="card mb-3">
+  <img src="images/pearl.png" style="height: 200px; width: 300px; align-self: center; border-radius: 10px;"  class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="color: orange; font-family: Arial, Helvetica, sans-serif;">What is Pearl ? </h5>
+    <p class="card-text" style="font-family: Arial, Helvetica, sans-serif;">Perl is a high-level, general-purpose, interpreted, dynamic programming language. Though Perl is not officially an acronym, there are various backronyms in use, including "Practical Extraction and Reporting Language</p>
+  </div>
+</div>
+
+
+
+    <h1>Loops in Pearl </h1>
+
+
+
+
+    
+    <div class="card">
+      <p style="color: orange;">Syntax for loop in Pearl.</p>
+        <code> 
+          for (init statement; condition; increment/decrement ) 
+          {
+              # Code to be Executed
+          }
+      </p>
+        <p>Try here </p>
+
+      <input class="card-footer"><code id="code_java">
+        <button id="compile_button">Compile your code</button>
+    </div>
+    
+  
+
+
+
+
+    <div class="card" style="background-color: rgb(168, 141, 91);">
+      <p style="font-size: larger;">Excersise, Fill in the empty boxes in the code bellow.
+        <br>
+        <code> 
+          <input type="text" style="width: 30px;">(init statement; condition; increment/decrement ) 
+          {
+              # Code to be Executed
+          }
+      </code>
+      </p>
+        <p>Try here </p>
+
+      <input class="card-footer"><code id="code_java">
+        <button id="compile_button">Compile your code</button>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h1 id="next_button" style="background-color: green; width: 120px; padding-left: 25px; border-radius: 15px; cursor: pointer">NEXT</h1>
+
+    
+
+
+
+    
+
+
+
+
+      <!-- back to top-->
+      <!-- Back to top button -->
+<button
+type="button"
+class="btn btn-danger btn-floating btn-lg"
+id="btn-back-to-top"
+>
+<i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Explanation -->
+<div class="container mt-4 text-center" style="height: 2000px">
+</div>
+<script>//Get the button
+  let mybutton = document.getElementById("btn-back-to-top");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
+  
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  // When the user clicks on the button, scroll to the top of the document
+  mybutton.addEventListener("click", backToTop);
+  
+  function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }</script>
+      
+
+
+
+
+
+      <!------------------------------------------------FOooter-------------------------------------->
+     
+      
+      <footer id="footer">
+        <div class="f-item-con">
+            <div class="app-info">
+                <span class='app-name'>Learn<span class='app-initial'>IT</span></span>
+                <p>We provides you with <strong>Well organised</strong> and <strong>user friendly</strong> Coding Courses.</p>
+            </div>
+            <div class="useful-links">
+                <div class="footer-title">Useful Links</div>
+                <ul>
+                    <a href="sign_in_page/sign_in.html"><li>Sign In</li></a>
+                    <li>Pearl</li>
+                    <li>About LearnIT</li>
+                    <li>Terms and Conditions</li>
+                </ul>
+            </div>
+            <div class="help-sec">
+                <div class="footer-title">Help</div>
+                <ul>
+                    <li>Feedback</li>
+                    <li>Report a Issue</li>
+                </ul>
+            </div>
+            <div class="g-i-t">
+                <div class="footer-title">Get in Touch</div>
+                <form action="/" method="post" class="space-y-2">
+                    <input type="text" name="g-name" class="g-inp" id="g-name" placeholder='Name' />
+                    <input type="email" name="g-email" class="g-inp" id="g-email" placeholder='Email' />
+                    <textarea type="text" name="g-msg" class="g-inp h-40 resize-none" id="g-msg"
+                        placeholder='Message...'></textarea>
+                    <button type="submit" class='f-btn'>Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class='cr-con'>Copyright &copy; 2023 | Made by (LeanrIT) Amirhesam Bayati</div>
+    </footer>
+
+
+
+
+	
+</body>
+</html>
